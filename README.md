@@ -51,6 +51,6 @@ nicely.
 
 If you prefer to have the cookie source at end, you can use grep and sed.
 
-    /usr/games/fortune -c |egrep -v '^%$' |sed '1h;1d;$G'
+    /usr/games/fortune -c |sed -e '/^%$/d' -e '1h;1d;$G'
 
 -- poc@pocnet.net, 2022-11-26

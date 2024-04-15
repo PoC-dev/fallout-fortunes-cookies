@@ -40,7 +40,7 @@ The rest was some... *magic* with
 ```
    cd /usr/local/share/games/fortunes
    \ls -1 Fallout* |while read FILE; do
-       strfile ${FILE} ${FILE}.dat
+       strfile "${FILE}" "${FILE}.dat"
    done
 ```
 

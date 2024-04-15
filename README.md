@@ -1,6 +1,6 @@
 This is a collection of texts from the
 [Fallout games series](https://en.wikipedia.org/wiki/Fallout_(series)) loading
-screens. They have been reformatted to be used with the
+screens, and other sources. They have been reformatted to be used with the
 [fortune](https://en.wikipedia.org/wiki/Fortune_(Unix)) UNIX command.
 
 ### Source
@@ -12,6 +12,8 @@ sub-pages for the different Fallout Releases.
 I also incorporated the strings from the
 [Fallout 76 Fortune Teller Machine](https://fallout.fandom.com/wiki/Fortune_teller_machine),
 a craftable item for your C.A.M.P.
+
+Finally, I added the [Fallout 76 perk jokes](https://fallout-archive.fandom.com/wiki/Fallout_76_perk_jokes).
 
 **Note!** The texts have been copied from commercial games by the community of
 *Fallout Fandom*. This doesn't indicate that the texts are free of copyright.
@@ -53,4 +55,4 @@ If you prefer to have the cookie source at end, you can use grep and sed.
 
     /usr/games/fortune -c |sed -e '/^%$/d' -e '1h;1d;$G'
 
--- poc@pocnet.net, 2022-11-26
+-- poc@pocnet.net, 2024-04-15

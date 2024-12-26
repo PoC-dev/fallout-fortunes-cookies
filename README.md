@@ -23,6 +23,16 @@ The rest was some... *magic* with
 [grep](https://en.wikipedia.org/wiki/Grep), and
 [sed](https://en.wikipedia.org/wiki/Sed).
 
+After discovering the automatically generated
+[fo76-dumps](https://github.com/FWDekker/fo76-dumps), I wrote a tiny Perl
+script `extract-76fortunes.pl`, which reads from stdin, and writes to stdout.
+Stdin is expected to be the file *wiki.BOOK.wiki* from the releases of the
+above repository. Output is a cookie jar file from the contained Fallout 76
+Fortune Teller Machine entries.
+
+The current *Fallout 76 Fortune Machine* file has been generated with this
+script.
+
 ### How to use (on Debian based systems)
 * Install fortune.
 
@@ -55,4 +65,4 @@ If you prefer to have the cookie source at end, you can use grep and sed.
 
     /usr/games/fortune -c |sed -e '/^%$/d' -e '1h;1d;$G'
 
--- poc@pocnet.net, 2024-04-15
+-- poc@pocnet.net, 2024-12-26

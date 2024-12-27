@@ -28,10 +28,14 @@ After discovering the automatically generated
 script `extract-76fortunes.pl`, which reads from stdin, and writes to stdout.
 Stdin is expected to be the file *wiki.BOOK.wiki* from the releases of the
 above repository. Output is a cookie jar file from the contained Fallout 76
-Fortune Teller Machine entries.
+Fortune Teller Machine entries. Note that the original file contains *carriage
+return* characters, which need to be stripped manually, e. g. by using `tr -d '\r'`.
 
 The current *Fallout 76 Fortune Machine* file has been generated with this
-script.
+command line:
+```
+   tr -d '\r' < wiki.BOOK.wiki |./extract-76fortunes.pl |fmt -s -w 80 > 'Fallout 76 Fortune Machine'
+```
 
 ### How to use (on Debian based systems)
 * Install fortune.

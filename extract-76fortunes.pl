@@ -17,7 +17,7 @@ foreach $line ( <STDIN> ) {
 
     # If both are found.
     if ( defined($pre) && defined($post) ) {
-        printf("%s: %s\n%%\n", $pre, $post);
+        printf("%s - %s\n%%\n", $post, $pre);
 
         # Prepare for next loop iteration.
         undef($pre);
